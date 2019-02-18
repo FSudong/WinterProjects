@@ -17,7 +17,13 @@ def WhereIP(ip):
     html = etree.HTML(data)
     try:
         areanm = html.xpath('//*[@id="result"]/div/p[2]/code/text()')
-        print(ip  + ' : ' + areanm[0])
+        GeoIP = html.xpath('//*[@id="result"]/div/p[3]/text()')
+        loc = html.xpath('//*[@id="result"]/div/p[4]/text()')
+
+        print(ip + ':')
+        print(areanm[0])
+        print(GeoIP[0])
+        print(loc[0])
     except:
         print("Cannot find ip:" + ip)
 

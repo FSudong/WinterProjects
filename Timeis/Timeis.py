@@ -11,7 +11,6 @@ import http.cookiejar
 
 
 def Timeis():
-    req = Request('https://time.is/')
     head = {
         'Connection': 'Keep-Alive',
         'Accept': 'text/html, application/xhtml+xml, */*',
