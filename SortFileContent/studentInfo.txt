@@ -1,0 +1,4 @@
+2	qianglong	100
+3	krist	70
+4	bilibili	80
+1	xiaohua	99
